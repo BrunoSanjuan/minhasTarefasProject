@@ -19,7 +19,7 @@ public class GerenciadorDeTarefas {
 
         System.out.println("- - - - - Adicionar nova tarefa - - - - - ");
         System.out.println("Informe o nome da tarefa desejada: ");
-        String descricao = scannear.next();
+        String descricao = scannear.nextLine(); //Lê espaços entre caracteres
         Tarefa tarefa = new Tarefa(descricao);
         tarefas.add(tarefa);
         System.out.println("Tarefa adicionada com sucesso!");
